@@ -110,41 +110,62 @@ Adding Transactions
   3.	If the transaction exceeds your monthly budget, a warning message is displayed.
 Viewing Transactions
 
-  •	All transactions are displayed in a table format, showing:
+  4.	All transactions are displayed in a table format, showing:
   
     -	Date, Category, Type, Amount, and Description.
     
-Generating Reports
+  5.  Generating Reports
 
-  1.	Click on Generate Report to view a summary of:
+    1.	Click on Generate Report to view a summary of:
      
-    -	Total income.
+      -	Total income.
     
-    -	Total expenses.
+      -	Total expenses.
     
-    -	Net savings.
+      -	Net savings.
     
-Returning to the Main Menu
+  6.  Returning to the Main Menu
 
-  •	Click Back to navigate between pages.
+    -	Click Back to navigate between pages.
+    
 ________________________________________
+
 Code Structure
+
 1.	Database Setup
-o	The setup_database() function creates three tables:
-	users: Stores user credentials.
-	transactions: Logs all transactions for users.
-	budgets: Saves user-specific monthly budgets.
+
+    -	The setup_database() function creates three tables:
+      
+        -	users: Stores user credentials.
+          
+        -	transactions: Logs all transactions for users.
+          
+        -	budgets: Saves user-specific monthly budgets.
+          
 2.	Authentication Functions
-o	register_user(): Handles user registration.
-o	login_user(): Verifies login credentials and loads user data.
+   
+    -	register_user(): Handles user registration.
+      
+    -	login_user(): Verifies login credentials and loads user data.
+      
 3.	Budget Management
-o	save_budget(): Saves or updates the monthly budget.
-o	load_budget(): Retrieves the saved budget for the logged-in user.
+   
+    -	save_budget(): Saves or updates the monthly budget.
+      
+    -	load_budget(): Retrieves the saved budget for the logged-in user.
+      
 4.	Transaction Handling
-o	add_transaction(): Adds income/expense transactions to the database.
-o	display_transactions(): Displays all transactions in a table format.
+   
+    -	add_transaction(): Adds income/expense transactions to the database.
+      
+    -	display_transactions(): Displays all transactions in a table format.
+      
 5.	Report Generation
-o	generate_report_page(): Calculates and displays income, expenses, and savings.
+   
+    -	generate_report_page(): Calculates and displays income, expenses, and savings.
+      
 6.	UI Navigation
-o	switch_frame(): Simplifies switching between different UI frames.
+   
+    -	switch_frame(): Simplifies switching between different UI frames.
+      
 
